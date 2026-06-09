@@ -1,5 +1,5 @@
 import { module, test } from 'qunit';
-import { setupTest } from 'frontend-decide/tests/helpers';
+import { setupTest } from 'frontend-decide-yasgui/tests/helpers';
 
 module('Unit | Route | present-credential', function (hooks) {
   setupTest(hooks);
