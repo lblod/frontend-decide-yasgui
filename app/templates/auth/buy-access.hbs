@@ -1,7 +1,9 @@
 {{page-title "Restricted dataset"}}
 
-<section class="au-o-region-large au-u-min-height-full au-u-overflow-auto">
-  <div class="au-u-flex au-u-flex--center au-u-height-full">
+<section
+  class="au-o-region-large au-u-overflow-auto au-u-flex--column au-u-flex"
+>
+  <div class="au-u-flex au-u-flex--center">
     <div class="au-o-layout">
 
       <section class="au-u-text-center">
@@ -33,7 +35,7 @@
             >
               <p>Buy a verifiable credential.</p>
               <div
-                class="au-u-height-full au-u-flex au-u-flex--vertical-center au-u-flex--center"
+                class="au-u-flex au-u-flex--vertical-center au-u-flex--center"
               >
                 <img
                   class="login-image-big"
@@ -45,13 +47,13 @@
 
             <c.footer class="au-u-margin-top">
               <MockLogin as |login|>
-              <AuButton
-                @width="block"
-                @skin="button"
-                {{on "click" (fn this.buyAccess login.login)}}
-              >
-                Buy access
-              </AuButton>
+                <AuButton
+                  @width="block"
+                  @skin="button"
+                  {{on "click" (fn this.buyAccess login.login)}}
+                >
+                  Buy access
+                </AuButton>
               </MockLogin>
             </c.footer>
           </AuCard>
@@ -70,7 +72,7 @@
             >
               <p>Log in.</p>
               <div
-                class="au-u-height-full au-u-flex au-u-flex--vertical-center au-u-flex--center"
+                class="au-u-flex au-u-flex--vertical-center au-u-flex--center"
               >
                 <img
                   class="login-image-small"

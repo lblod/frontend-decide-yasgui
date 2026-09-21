@@ -25,8 +25,11 @@
       {{/if}}
     </li>
   </AuMainHeader>
-  <AuMainContainer as |main|>
-    <main.content>
+  <AuMainContainer
+    class="au-c-main-container__content au-c-main-container__content--scroll"
+    as |main|
+  >
+    <main.content @scroll={{true}}>
       {{#if this.session.isAuthenticated}}
         <AuToolbar @border="bottom" @size="small" @skin="tint">
           <nav
@@ -43,9 +46,8 @@
           </nav>
         </AuToolbar>
       {{/if}}
-      <AuBodyContainer>
-        {{outlet}}
-      </AuBodyContainer>
+      {{outlet}}
+      <FundedByDs4sscc />
     </main.content>
   </AuMainContainer>
 </AuApp>
